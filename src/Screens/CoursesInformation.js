@@ -7,7 +7,26 @@ const Stack= createNativeStackNavigator();
 export default function CoursesInformation({ navigation }){
     return(
         <View>
-            <Information/>
+            <Information title="Angular Eğitimi"
+            imageSource={require('../../assets/indir.png')}
+            desc ="Kapsamlı Angular Eğitimi"/>
+           
+           <Information title="C# Eğitimi"
+            imageSource={require('../../assets/indir(1).png')}
+            desc ="Kapsamlı C# Eğitimi"/>
+           
+           <Information title="React JS Eğitimi"
+            imageSource={require('../../assets/images.webp')}
+            desc ="Kapsamlı React JS Eğitimi"/>
+           
+           <Information title="C Eğitimi"
+            imageSource={require('../../assets/indir(2).png')}
+            desc ="Kapsamlı C Eğitimi"/>
+           
+           <Information title="Bootstrap Eğitimi"
+            imageSource={require('../../assets/indir(3).png')}
+            desc ="Kapsamlı Bootstrap Eğitimi"/>
+           
         </View>
     )
 }
