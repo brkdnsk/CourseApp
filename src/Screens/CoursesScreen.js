@@ -1,10 +1,11 @@
 import { View, Text ,FlatList, StyleSheet} from 'react-native'
 import React from 'react'
 import {NavigationContainer} from '@react-navigation/native';
+import HomePage from '../Screens/HomePage';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 const Stack= createNativeStackNavigator();
 
-export default function HomeScreen() {
+export default function CoursesScreen() {
   
     const courses=[
         {name:'Angular',id:1},
@@ -29,7 +30,7 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
     content:{
         fontSize:20,
-        backgroundColor:'yellow',
+        backgroundColor:'blue',
         marginVertical:10,
         padding:20,
     }

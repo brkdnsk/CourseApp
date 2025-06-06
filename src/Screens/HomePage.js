@@ -1,11 +1,14 @@
 import { StyleSheet, Text, View ,TouchableOpacity} from "react-native";  
 import React from 'react';
 
-export default function HomePage(){
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+
+const Stack= createNativeStackNavigator();
+export default function HomePage({ navigation }){
     return(
         <View>
                 <Text>Kurslarım</Text>
-        <TouchableOpacity style={styles.button} onPress={HomePage}>
+        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Course')}>
                 <Text style={styles.buttonText}>Detaylar</Text>
         </TouchableOpacity>
         </View>
@@ -14,7 +17,7 @@ export default function HomePage(){
 const styles = StyleSheet.create({
 button: {
     width: "100%",
-    height: 50,
+    height: 45,
     backgroundColor: "#8c7051",
     borderRadius: 12,
     justifyContent: "center",
