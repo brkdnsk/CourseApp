@@ -9,7 +9,10 @@ export default function HomePage({ navigation }){
         <View>
                 <Text>Kurslarım</Text>
         <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Course')}>
-                <Text style={styles.buttonText}>Detaylar</Text>
+                <Text style={styles.buttonText}>Kurslar</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Courses')}>
+                <Text style={styles.buttonText}>Kurs Bilgilerim</Text>
         </TouchableOpacity>
         </View>
     )
