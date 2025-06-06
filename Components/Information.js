@@ -4,12 +4,27 @@ import React from 'react'
 export default function Information({ title,imageSource,desc }) {
   return (
     <View>
-        <Image source ={imageSource}/>
-      <Text>{title}</Text>
-      <Text>{desc}</Text>
-      
+        <Image style={styles.img} source ={imageSource}/>
+        <View style={styles.descTitle}>
+            <Text style={styles.titles}>{title}</Text>
+            <Text style={styles.textDesc}>{desc}</Text>
+        </View> 
     </View>
   )
 }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    img:{
+        width:'100%',
+    },
+    descTitle:{
+        alignItems:'center',
+        paddingVertical:20,
+    },
+    titles:{
+        fontSize: 30,
+    },
+    textDesc:{
+        fontSize: 20,
+    }
+})

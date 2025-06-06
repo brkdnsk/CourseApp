@@ -12,7 +12,7 @@ export default function CoursesInformation({ navigation }){
             desc ="Kapsamlı Angular Eğitimi"/>
            
            <Information title="C# Eğitimi"
-            imageSource={require('../../assets/C#.jpg')}
+            imageSource={require('../../assets/Cc.jpg')}
             desc ="Kapsamlı C# Eğitimi"/>
            
            <Information title="React JS Eğitimi"
