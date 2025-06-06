@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View ,TouchableOpacity} from "react-native";  
+import { StyleSheet, Text, View ,TouchableOpacity , ScrollView,Image} from "react-native";  
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Information from "../../Components/Information";
@@ -6,28 +6,28 @@ const Stack= createNativeStackNavigator();
 
 export default function CoursesInformation({ navigation }){
     return(
-        <View>
+        <ScrollView>
             <Information title="Angular Eğitimi"
-            imageSource={require('../../assets/indir.png')}
+            imageSource={require('../../assets/Angular.jpg')}
             desc ="Kapsamlı Angular Eğitimi"/>
            
            <Information title="C# Eğitimi"
-            imageSource={require('../../assets/indir(1).png')}
+            imageSource={require('../../assets/C#.jpg')}
             desc ="Kapsamlı C# Eğitimi"/>
            
            <Information title="React JS Eğitimi"
-            imageSource={require('../../assets/images.webp')}
+            imageSource={require('../../assets/React.jpg')}
             desc ="Kapsamlı React JS Eğitimi"/>
            
            <Information title="C Eğitimi"
-            imageSource={require('../../assets/indir(2).png')}
+            imageSource={require('../../assets/C.jpg')}
             desc ="Kapsamlı C Eğitimi"/>
            
            <Information title="Bootstrap Eğitimi"
-            imageSource={require('../../assets/indir(3).png')}
+            imageSource={require('../../assets/Boot.jpg')}
             desc ="Kapsamlı Bootstrap Eğitimi"/>
            
-        </View>
+        </ScrollView>
     )
 }
 const styles = StyleSheet.create({
