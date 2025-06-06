@@ -1,12 +1,13 @@
 import { StyleSheet, Text, View ,TouchableOpacity} from "react-native";  
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import Information from "../../Components/Information";
 const Stack= createNativeStackNavigator();
-export default function CoursesInformation(){
+
+export default function CoursesInformation({ navigation }){
     return(
         <View>
-                <Text>Kurslarım</Text>
-        
+            <Information/>
         </View>
     )
 }
